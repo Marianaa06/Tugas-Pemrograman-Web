@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Profil</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* BODY */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #eaf2ff, #dce7ff);
+            color: #1a1a1a;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 8px 20px;
+            margin: 20px auto;
+            width: fit-content;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3a4fff;
+            font-weight: 500;
+        }
+
+        /* SECTION */
+        .project {
+            padding: 80px 20px;
+        }
+
+        /* CARD FORM */
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(58, 79, 255, 0.1);
+        }
+
+        /* TITLE */
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #f5f5fa;
+            margin-bottom: 10px;
+        }
+
+        /* INPUT */
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            border: 1px solid #d0d7ff;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        /* FOCUS EFFECT */
+        input:focus,
+        textarea:focus {
+            border-color: #3a4fff;
+            box-shadow: 0 0 0 3px rgba(58, 79, 255, 0.1);
+        }
+
+        /* LABEL */
+        label {
+            font-weight: 500;
+            color: #555;
+        }
+
+        /* BUTTON */
+        .button {
+            padding: 12px 25px;
+            border-radius: 30px;
+            border: none;
+            background: linear-gradient(135deg, #4facfe, #3a4fff);
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* BUTTON HOVER */
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(58, 79, 255, 0.2);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #3a4fff;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width:768px) {
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="no-sticky">
+    <nav>
+        <ul>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="journey.html">journey</a></li>
+            <li><a href="experience.html">experience</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profil.html">profil</a></li>
+            <li><a href="https://instagram.com/marianamrdn_" target="_blank">instagram</a></li>
+            <li><a href="https://wa.me/082299543317">Whatsapp</a></li>
+        </ul>
+    </nav>
+
+    <section class="project blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h1>Form Profil</h1>
+                    <p>Fill in your personal information below, then click the save button to view your profile.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <form id="profilForm">
+                        <ul>
+                            <li>
+                                <label for="nama">Name</label><br>
+                                <input type="text" id="nama" name="nama" required>
+                            </li>
+                            <li>
+                                <label for="nim">NIM</label><br>
+                                <input type="text" id="nim" name="nim" required>
+                            </li>
+                            <li>
+                                <label for="alamat">Address</label><br>
+                                <textarea id="alamat" name="alamat" rows="3" required></textarea>
+                            </li>
+                            <li>
+                                <label for="hobi">Hobby</label><br>
+                                <input type="text" id="hobi" name="hobi" required>
+                            </li>
+                            <li>
+                                <label for="instagram">Instagram</label><br>
+                                <input type="text" id="instagram" name="instagram" placeholder="@username" required>
+                            </li>
+                        </ul>
+                        <button type="submit" class="button">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>any questions?<br>
+            find me here <br><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                data-cfemail="03666e626a6f43796a6871622d6a67">[email&#160;protected]</a></h2>
+        <p>designed & developed by Mariana</p>
+    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="javascript/js.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
+        integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+        data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9f663adcbe8b40fc',t:'MTc3Nzg4NDMzMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();
+        document.getElementById("profilForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // ambil data
+            const nim = document.getElementById("nim").value;
+            const nama = document.getElementById("nama").value;
+            const alamat = document.getElementById("alamat").value;
+            const hobi = document.getElementById("hobi").value;
+            const instagram = document.getElementById("instagram").value;
+
+            // simpan ke localStorage
+            localStorage.setItem("nim", nim);
+            localStorage.setItem("nama", nama);
+            localStorage.setItem("alamat", alamat);
+            localStorage.setItem("hobi", hobi);
+            localStorage.setItem("instagram", instagram);
+
+            // pindah halaman
+            window.location.href = "profilTampil.html";
+        });
+    </script>
+</body>
+
+</html>

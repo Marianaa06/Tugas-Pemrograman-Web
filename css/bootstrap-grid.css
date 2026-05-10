@@ -1,0 +1,32 @@
+/* css/bootstrap-grid.css - Hanya Grid System Dasar */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px; /* Atur lebar maksimal container */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-sm {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .row {
+    flex-direction: column; /* Tampilan vertikal di HP */
+  }
+}
